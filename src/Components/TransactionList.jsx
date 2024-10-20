@@ -12,12 +12,11 @@ function TransactionList({transaction, setTransaction}) {
     }
   return (
     <div className='transaction-list'>
-   
+      <h2>Transaction List</h2>
       {
         transaction.map((transaction)=>{
             return(
                <>
-                <h2>Transaction List</h2>
                 <div className={transaction.type==='income'?'green':'red'}>
                 <div className="list">
                 <p>{transaction.desc}</p>
